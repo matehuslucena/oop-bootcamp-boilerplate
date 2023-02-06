@@ -1,7 +1,6 @@
 package oop;
 
 public class Rectangle {
-
     private double sideA;
     private double sideB;
 
@@ -15,5 +14,9 @@ public class Rectangle {
     }
     public double getSideB() {
         return sideB;
+    }
+
+    public double calculatePerimeter() {
+        return sideA*2 + sideB*2;
     }
 }

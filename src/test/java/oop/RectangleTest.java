@@ -14,4 +14,13 @@ public class RectangleTest {
         assertEquals(rectangle.getSideA(), 2.0);
         assertEquals(rectangle.getSideB(), 3.0);
     }
+
+    @Test
+    public void itShouldCaculatePerimeter() {
+        double sideA = 2.0;
+        double sideB = 3.0;
+        Rectangle rectangle = new Rectangle(sideA, sideB);
+
+        assertEquals(rectangle.calculatePerimeter(), 10.0);
+    }
 }
