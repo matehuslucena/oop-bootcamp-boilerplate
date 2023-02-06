@@ -9,4 +9,9 @@ public class ProbabilityCalculatorTest {
     public void itShouldReturnTheChanceOfGetting6WhenRollDice() {
         assertEquals(ProbabilityCalculator.probabilityOfGettingSix(), (float) 0.16666667);
     }
+    
+    @Test
+    public void itShouldReturnTheChanceOfNotGetting6WhenRollDice() {
+        assertEquals(ProbabilityCalculator.probabilityOfNotGettingSix(), (float) 0.8333333);
+    }
 }
