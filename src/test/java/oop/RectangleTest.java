@@ -1,26 +1,33 @@
 package oop;
 
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import static org.testng.AssertJUnit.assertEquals;
 
 public class RectangleTest {
-    @Test
-    public void itShouldCreateRectangle() {
+
+    Rectangle rectangle;
+    @BeforeTest
+    public void Setup() {
         double sideA = 2.0;
         double sideB = 3.0;
-        Rectangle rectangle = new Rectangle(sideA, sideB);
 
+        rectangle = new Rectangle(sideA, sideB);
+    }
+    @Test
+    public void itShouldCreateRectangle() {
         assertEquals(rectangle.getSideA(), 2.0);
         assertEquals(rectangle.getSideB(), 3.0);
     }
 
     @Test
-    public void itShouldCaculatePerimeter() {
-        double sideA = 2.0;
-        double sideB = 3.0;
-        Rectangle rectangle = new Rectangle(sideA, sideB);
-
+    public void itShouldCalculatePerimeter() {
         assertEquals(rectangle.calculatePerimeter(), 10.0);
+    }
+
+    @Test
+    public void itShouldCalculateArea() {
+        assertEquals(rectangle.calculateArea(), 6.0);
     }
 }

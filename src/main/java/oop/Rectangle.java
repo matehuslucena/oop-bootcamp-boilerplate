@@ -19,4 +19,8 @@ public class Rectangle {
     public double calculatePerimeter() {
         return sideA*2 + sideB*2;
     }
+
+    public double calculateArea() {
+        return sideA * sideB;
+    }
 }
