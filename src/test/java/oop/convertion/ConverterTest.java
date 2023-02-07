@@ -1,5 +1,6 @@
-package oop;
+package oop.convertion;
 
+import oop.Converter;
 import org.junit.Test;
 
 import static org.testng.Assert.assertEquals;
@@ -26,5 +27,11 @@ public class ConverterTest {
     public void itShouldConvertMetersToCentimeters() {
         Double result = Converter.metersToCentimeters(2.0);
         assertEquals(result, 200);
+    }
+
+    @Test
+    public void itShouldConvertGallonsToLiters() {
+        Double result = Converter.gallonsToLiters(4.0);
+        assertEquals(result, 15.1416);
     }
 }
