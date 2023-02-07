@@ -1,5 +1,6 @@
-package oop;
+package oop.rectangle;
 
+import oop.Rectangle;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 

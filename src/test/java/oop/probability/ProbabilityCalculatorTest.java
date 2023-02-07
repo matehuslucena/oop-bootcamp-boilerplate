@@ -1,5 +1,6 @@
-package oop;
+package oop.probability;
 
+import oop.ProbabilityCalculator;
 import org.testng.annotations.Test;
 
 import static org.testng.AssertJUnit.assertEquals;
@@ -15,12 +16,6 @@ public class ProbabilityCalculatorTest {
         float expected = 1 - ProbabilityCalculator.probabilityOfGettingSix();
         assertEquals(expected, (float) 0.83, 0.01d);
     }
-    
-    /*@Test
-    public void itShouldReturnTheProductOfTwoChances() {
-        float expected = ProbabilityCalculator.probabilityOfGettingSix() * ProbabilityCalculator.probabilityOfNotGettingSix();
-        assertEquals(expected, (float) 0.13, 0.01d);
-    }*/
 
     @Test
     public void itShouldReturnTheProductOfTwoChances() {
