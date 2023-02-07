@@ -6,10 +6,19 @@ import static org.testng.Assert.assertEquals;
 
 public class ConverterTest {
 
-    @Test
-    public void itShouldCompareFeetWithMeters() {
-        Double result = Converter.feetToMeters(5);
+    private final Double DELTA = 0.01d;
 
-        assertEquals(result, 1.524);
+    @Test
+    public void itShouldConverterFeetToMeters() {
+        Double result = Converter.feetToMeters(5.0);
+
+        assertEquals(result, 1.524, DELTA);
+    }
+
+    @Test
+    public void itShouldConvertInchesToYards() {
+        Double result = Converter.inchesToYards(5.0);
+
+        assertEquals(result, 0.1389, DELTA);
     }
 }
