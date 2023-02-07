@@ -21,4 +21,10 @@ public class ConverterTest {
 
         assertEquals(result, 0.1389, DELTA);
     }
+
+    @Test
+    public void itShouldConvertMetersToCentimeters() {
+        Double result = Converter.metersToCentimeters(2.0);
+        assertEquals(result, 200);
+    }
 }
